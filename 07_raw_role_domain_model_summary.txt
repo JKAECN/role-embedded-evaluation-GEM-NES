@@ -1,0 +1,288 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: form_interaction
+   Data: domain_long
+Control: lmer_ctrl
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+ 518419.6  519350.8 -259118.8  518237.6    205275 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.5402 -0.6554 -0.0328  0.6412  4.3069 
+
+Random effects:
+ Groups       Name        Variance Std.Dev.
+ expert_uid   (Intercept) 0.22567  0.4750  
+ country_year (Intercept) 0.01177  0.1085  
+ country      (Intercept) 0.07554  0.2748  
+ Residual                 0.63040  0.7940  
+Number of obs: 205366, groups:  expert_uid, 18275; country_year, 576; country, 108
+
+Fixed effects:
+                                                     Estimate    Std. Error
+(Intercept)                                          2.530989      0.037901
+domainGovernmentSupport                              0.081821      0.018258
+domainTaxesBureaucracy                              -0.145560      0.018444
+domainGovernmentPrograms                             0.087812      0.018502
+domainBasicSchoolEducation                          -0.526724      0.018276
+domainPostSchoolEducation                            0.198762      0.018324
+domainRDTransfer                                    -0.174328      0.018627
+domainCommercialInfrastructure                       0.341352      0.018311
+domainMarketDynamics                                 0.471036      0.018242
+domainMarketOpenness                                -0.033854      0.018689
+domainPhysicalInfrastructure                         1.044919      0.018418
+domainCulturalNorms                                  0.237871      0.018211
+entrepreneur                                        -0.116011      0.015000
+investor                                            -0.018895      0.017879
+policymaker                                          0.037492      0.017631
+support_provider                                    -0.004030      0.014889
+educator                                             0.026404      0.015088
+year_f2013                                          -0.004962      0.028520
+year_f2014                                           0.006064      0.027585
+year_f2015                                          -0.041603      0.028803
+year_f2016                                          -0.033555      0.028021
+year_f2017                                          -0.003656      0.029439
+year_f2018                                           0.046703      0.029538
+year_f2019                                           0.136231      0.029438
+year_f2020                                           0.186152      0.030628
+year_f2021                                           0.201791      0.030150
+age_z_imp                                           -0.050334      0.005025
+age_missing                                          0.012382      0.023552
+exp_z_imp                                            0.015523      0.005102
+exp_missing                                         -0.001206      0.016595
+gender_fMale                                         0.066090      0.009355
+gender_fMissing                                      0.182735      0.060796
+domainGovernmentSupport:entrepreneur                -0.175331      0.017606
+domainTaxesBureaucracy:entrepreneur                 -0.031394      0.017779
+domainGovernmentPrograms:entrepreneur               -0.116641      0.017834
+domainBasicSchoolEducation:entrepreneur             -0.033778      0.017624
+domainPostSchoolEducation:entrepreneur              -0.004621      0.017670
+domainRDTransfer:entrepreneur                       -0.014417      0.017995
+domainCommercialInfrastructure:entrepreneur          0.075105      0.017641
+domainMarketDynamics:entrepreneur                    0.088508      0.017594
+domainMarketOpenness:entrepreneur                    0.022608      0.018049
+domainPhysicalInfrastructure:entrepreneur            0.095500      0.017760
+domainCulturalNorms:entrepreneur                     0.057993      0.017561
+domainGovernmentSupport:investor                    -0.042655      0.021293
+domainTaxesBureaucracy:investor                      0.039617      0.021478
+domainGovernmentPrograms:investor                   -0.031814      0.021582
+domainBasicSchoolEducation:investor                  0.014461      0.021301
+domainPostSchoolEducation:investor                  -0.046365      0.021366
+domainRDTransfer:investor                           -0.028185      0.021709
+domainCommercialInfrastructure:investor              0.040648      0.021276
+domainMarketDynamics:investor                       -0.003340      0.021219
+domainMarketOpenness:investor                        0.027923      0.021726
+domainPhysicalInfrastructure:investor                0.062246      0.021438
+domainCulturalNorms:investor                         0.001208      0.021206
+domainGovernmentSupport:policymaker                  0.160509      0.020844
+domainTaxesBureaucracy:policymaker                   0.104475      0.021039
+domainGovernmentPrograms:policymaker                 0.138710      0.021040
+domainBasicSchoolEducation:policymaker               0.044226      0.020834
+domainPostSchoolEducation:policymaker                0.054174      0.020884
+domainRDTransfer:policymaker                         0.032625      0.021178
+domainCommercialInfrastructure:policymaker           0.027839      0.020906
+domainMarketDynamics:policymaker                    -0.016943      0.020818
+domainMarketOpenness:policymaker                     0.056067      0.021301
+domainPhysicalInfrastructure:policymaker             0.069161      0.020987
+domainCulturalNorms:policymaker                      0.086054      0.020770
+domainGovernmentSupport:support_provider             0.007084      0.017555
+domainTaxesBureaucracy:support_provider             -0.013929      0.017725
+domainGovernmentPrograms:support_provider            0.055323      0.017777
+domainBasicSchoolEducation:support_provider         -0.040782      0.017572
+domainPostSchoolEducation:support_provider           0.001233      0.017619
+domainRDTransfer:support_provider                   -0.009902      0.017939
+domainCommercialInfrastructure:support_provider      0.051586      0.017590
+domainMarketDynamics:support_provider               -0.052046      0.017543
+domainMarketOpenness:support_provider                0.016304      0.018005
+domainPhysicalInfrastructure:support_provider        0.030221      0.017706
+domainCulturalNorms:support_provider                 0.032194      0.017509
+domainGovernmentSupport:educator                     0.015690      0.017810
+domainTaxesBureaucracy:educator                      0.001702      0.017987
+domainGovernmentPrograms:educator                   -0.020071      0.018032
+domainBasicSchoolEducation:educator                 -0.030666      0.017820
+domainPostSchoolEducation:educator                   0.065196      0.017867
+domainRDTransfer:educator                           -0.037847      0.018180
+domainCommercialInfrastructure:educator             -0.052309      0.017853
+domainMarketDynamics:educator                       -0.007600      0.017803
+domainMarketOpenness:educator                       -0.044580      0.018264
+domainPhysicalInfrastructure:educator                0.023536      0.017965
+domainCulturalNorms:educator                        -0.031679      0.017763
+                                                           df t value
+(Intercept)                                        344.894956  66.779
+domainGovernmentSupport                         187791.741575   4.481
+domainTaxesBureaucracy                          187906.381173  -7.892
+domainGovernmentPrograms                        187878.848672   4.746
+domainBasicSchoolEducation                      187837.065496 -28.820
+domainPostSchoolEducation                       187864.241366  10.847
+domainRDTransfer                                187923.298451  -9.359
+domainCommercialInfrastructure                  187836.629471  18.642
+domainMarketDynamics                            187814.907249  25.821
+domainMarketOpenness                            188006.985164  -1.811
+domainPhysicalInfrastructure                    187910.658880  56.732
+domainCulturalNorms                             187794.453034  13.062
+entrepreneur                                    122063.193033  -7.734
+investor                                        124364.701174  -1.057
+policymaker                                     123949.520931   2.127
+support_provider                                124620.306264  -0.271
+educator                                        124960.919198   1.750
+year_f2013                                         527.525634  -0.174
+year_f2014                                         504.287231   0.220
+year_f2015                                         498.368549  -1.444
+year_f2016                                         467.662461  -1.197
+year_f2017                                         462.152362  -0.124
+year_f2018                                         479.900231   1.581
+year_f2019                                         456.122020   4.628
+year_f2020                                         461.869366   6.078
+year_f2021                                         480.016310   6.693
+age_z_imp                                        18286.263662 -10.017
+age_missing                                      13078.456939   0.526
+exp_z_imp                                        18318.736224   3.042
+exp_missing                                      16646.855540  -0.073
+gender_fMale                                     18223.273907   7.065
+gender_fMissing                                   5046.381072   3.006
+domainGovernmentSupport:entrepreneur            187804.399381  -9.959
+domainTaxesBureaucracy:entrepreneur             187913.702395  -1.766
+domainGovernmentPrograms:entrepreneur           187889.290927  -6.540
+domainBasicSchoolEducation:entrepreneur         187853.161063  -1.917
+domainPostSchoolEducation:entrepreneur          187878.998704  -0.262
+domainRDTransfer:entrepreneur                   187936.960917  -0.801
+domainCommercialInfrastructure:entrepreneur     187834.740291   4.257
+domainMarketDynamics:entrepreneur               187829.340325   5.031
+domainMarketOpenness:entrepreneur               188020.223652   1.253
+domainPhysicalInfrastructure:entrepreneur       187925.958541   5.377
+domainCulturalNorms:entrepreneur                187803.434801   3.302
+domainGovernmentSupport:investor                187703.817699  -2.003
+domainTaxesBureaucracy:investor                 187830.316730   1.845
+domainGovernmentPrograms:investor               187820.058741  -1.474
+domainBasicSchoolEducation:investor             187746.668800   0.679
+domainPostSchoolEducation:investor              187781.431796  -2.170
+domainRDTransfer:investor                       187858.963203  -1.298
+domainCommercialInfrastructure:investor         187709.294165   1.911
+domainMarketDynamics:investor                   187687.265435  -0.157
+domainMarketOpenness:investor                   187888.753376   1.285
+domainPhysicalInfrastructure:investor           187819.351039   2.904
+domainCulturalNorms:investor                    187669.008663   0.057
+domainGovernmentSupport:policymaker             187765.805046   7.701
+domainTaxesBureaucracy:policymaker              187841.696230   4.966
+domainGovernmentPrograms:policymaker            187817.292395   6.593
+domainBasicSchoolEducation:policymaker          187775.546389   2.123
+domainPostSchoolEducation:policymaker           187796.799104   2.594
+domainRDTransfer:policymaker                    187842.859996   1.541
+domainCommercialInfrastructure:policymaker      187789.404409   1.332
+domainMarketDynamics:policymaker                187774.100153  -0.814
+domainMarketOpenness:policymaker                187941.843970   2.632
+domainPhysicalInfrastructure:policymaker        187848.561863   3.295
+domainCulturalNorms:policymaker                 187740.382932   4.143
+domainGovernmentSupport:support_provider        187807.535356   0.404
+domainTaxesBureaucracy:support_provider         187909.996568  -0.786
+domainGovernmentPrograms:support_provider       187880.972994   3.112
+domainBasicSchoolEducation:support_provider     187852.456518  -2.321
+domainPostSchoolEducation:support_provider      187884.654438   0.070
+domainRDTransfer:support_provider               187935.838814  -0.552
+domainCommercialInfrastructure:support_provider 187838.050504   2.933
+domainMarketDynamics:support_provider           187833.087912  -2.967
+domainMarketOpenness:support_provider           188023.991856   0.906
+domainPhysicalInfrastructure:support_provider   187927.057806   1.707
+domainCulturalNorms:support_provider            187803.384711   1.839
+domainGovernmentSupport:educator                187795.124001   0.881
+domainTaxesBureaucracy:educator                 187897.299858   0.095
+domainGovernmentPrograms:educator               187872.427503  -1.113
+domainBasicSchoolEducation:educator             187832.737666  -1.721
+domainPostSchoolEducation:educator              187863.316189   3.649
+domainRDTransfer:educator                       187911.519801  -2.082
+domainCommercialInfrastructure:educator         187829.401466  -2.930
+domainMarketDynamics:educator                   187822.204059  -0.427
+domainMarketOpenness:educator                   188004.279863  -2.441
+domainPhysicalInfrastructure:educator           187911.858546   1.310
+domainCulturalNorms:educator                    187793.399940  -1.783
+                                                            Pr(>|t|)    
+(Intercept)                                     < 0.0000000000000002 ***
+domainGovernmentSupport                          0.00000741923454094 ***
+domainTaxesBureaucracy                           0.00000000000000299 ***
+domainGovernmentPrograms                         0.00000207481113569 ***
+domainBasicSchoolEducation                      < 0.0000000000000002 ***
+domainPostSchoolEducation                       < 0.0000000000000002 ***
+domainRDTransfer                                < 0.0000000000000002 ***
+domainCommercialInfrastructure                  < 0.0000000000000002 ***
+domainMarketDynamics                            < 0.0000000000000002 ***
+domainMarketOpenness                                        0.070079 .  
+domainPhysicalInfrastructure                    < 0.0000000000000002 ***
+domainCulturalNorms                             < 0.0000000000000002 ***
+entrepreneur                                     0.00000000000001051 ***
+investor                                                    0.290572    
+policymaker                                                 0.033463 *  
+support_provider                                            0.786671    
+educator                                                    0.080112 .  
+year_f2013                                                  0.861947    
+year_f2014                                                  0.826092    
+year_f2015                                                  0.149254    
+year_f2016                                                  0.231728    
+year_f2017                                                  0.901210    
+year_f2018                                                  0.114507    
+year_f2019                                       0.00000482465746809 ***
+year_f2020                                       0.00000000255292108 ***
+year_f2021                                       0.00000000006116066 ***
+age_z_imp                                       < 0.0000000000000002 ***
+age_missing                                                 0.599092    
+exp_z_imp                                                   0.002350 ** 
+exp_missing                                                 0.942049    
+gender_fMale                                     0.00000000000166780 ***
+gender_fMissing                                             0.002663 ** 
+domainGovernmentSupport:entrepreneur            < 0.0000000000000002 ***
+domainTaxesBureaucracy:entrepreneur                         0.077438 .  
+domainGovernmentPrograms:entrepreneur            0.00000000006156233 ***
+domainBasicSchoolEducation:entrepreneur                     0.055296 .  
+domainPostSchoolEducation:entrepreneur                      0.793679    
+domainRDTransfer:entrepreneur                               0.423040    
+domainCommercialInfrastructure:entrepreneur      0.00002070435760008 ***
+domainMarketDynamics:entrepreneur                0.00000048922330644 ***
+domainMarketOpenness:entrepreneur                           0.210366    
+domainPhysicalInfrastructure:entrepreneur        0.00000007569399636 ***
+domainCulturalNorms:entrepreneur                            0.000959 ***
+domainGovernmentSupport:investor                            0.045150 *  
+domainTaxesBureaucracy:investor                             0.065107 .  
+domainGovernmentPrograms:investor                           0.140466    
+domainBasicSchoolEducation:investor                         0.497218    
+domainPostSchoolEducation:investor                          0.030007 *  
+domainRDTransfer:investor                                   0.194195    
+domainCommercialInfrastructure:investor                     0.056069 .  
+domainMarketDynamics:investor                               0.874940    
+domainMarketOpenness:investor                               0.198700    
+domainPhysicalInfrastructure:investor                       0.003690 ** 
+domainCulturalNorms:investor                                0.954561    
+domainGovernmentSupport:policymaker              0.00000000000001362 ***
+domainTaxesBureaucracy:policymaker               0.00000068519498080 ***
+domainGovernmentPrograms:policymaker             0.00000000004332623 ***
+domainBasicSchoolEducation:policymaker                      0.033769 *  
+domainPostSchoolEducation:policymaker                       0.009486 ** 
+domainRDTransfer:policymaker                                0.123434    
+domainCommercialInfrastructure:policymaker                  0.182985    
+domainMarketDynamics:policymaker                            0.415734    
+domainMarketOpenness:policymaker                            0.008486 ** 
+domainPhysicalInfrastructure:policymaker                    0.000983 ***
+domainCulturalNorms:policymaker                  0.00003426869063692 ***
+domainGovernmentSupport:support_provider                    0.686558    
+domainTaxesBureaucracy:support_provider                     0.431951    
+domainGovernmentPrograms:support_provider                   0.001858 ** 
+domainBasicSchoolEducation:support_provider                 0.020297 *  
+domainPostSchoolEducation:support_provider                  0.944218    
+domainRDTransfer:support_provider                           0.580969    
+domainCommercialInfrastructure:support_provider             0.003360 ** 
+domainMarketDynamics:support_provider                       0.003010 ** 
+domainMarketOpenness:support_provider                       0.365170    
+domainPhysicalInfrastructure:support_provider               0.087861 .  
+domainCulturalNorms:support_provider                        0.065949 .  
+domainGovernmentSupport:educator                            0.378348    
+domainTaxesBureaucracy:educator                             0.924610    
+domainGovernmentPrograms:educator                           0.265681    
+domainBasicSchoolEducation:educator                         0.085281 .  
+domainPostSchoolEducation:educator                          0.000263 ***
+domainRDTransfer:educator                                   0.037365 *  
+domainCommercialInfrastructure:educator                     0.003390 ** 
+domainMarketDynamics:educator                               0.669443    
+domainMarketOpenness:educator                               0.014650 *  
+domainPhysicalInfrastructure:educator                       0.190172    
+domainCulturalNorms:educator                                0.074518 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
